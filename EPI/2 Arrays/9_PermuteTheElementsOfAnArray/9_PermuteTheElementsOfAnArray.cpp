@@ -5,6 +5,12 @@ void apply_permutation(std::vector<int> &A, std::vector<int> P)
 {
     for (int i = 0; i < A.size(); i++)
     {
+        // element juz odwiedzony
+        if (P[i] == -1)
+        {
+            continue;
+        }
+
         int current = A[i];
         int whereToGoNext = P[i];
         P[i] = -1;
