@@ -4,8 +4,6 @@ Welcome! This repository is **not a project**, but a training ground.
 
 My goal here is simple: **to build fluency** in **C, C++, and Python** through relentless problem-solving. 
 
-And the reason is simple as well: **I just <3 coding!!** 
-
 ## Repository Structure
 
 The repository is organized by platforms/webistes/books, then by topics, with individual subfolders for each specific problem containing solutions in multiple languages. For example: 
