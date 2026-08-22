@@ -4,13 +4,18 @@ using namespace std;
 
 void dutchPartition(vector<int> &A, int pivotIndex)
 {
+    if (A.empty())
+    {
+        return;
+    }
+
     int smallerPlace = 0;            // // granica elementow mniejszych niz pivot
     int equalPlace = 0;              // aktualnie badany element
     int greaterPlace = A.size() - 1; // granica elementow wiekszych niz pivot
 
     int pivot = A[pivotIndex];
 
-    while (equalPlace < greaterPlace)
+    while (equalPlace <= greaterPlace)
     {
         if (A[equalPlace] > pivot)
         {
@@ -18,15 +23,16 @@ void dutchPartition(vector<int> &A, int pivotIndex)
             greaterPlace--;
         }
 
-        if (A[equalPlace] < pivot)
+        else if (A[equalPlace] < pivot)
         {
+            swap(A[smallerPlace], A[equalPlace]);
             equalPlace++;
             smallerPlace++;
         }
 
-        if (A[equalPlace] == pivot)
+        else // (A[equalPlace] == pivot)
         {
-            equal++;
+            equalPlace++;
         }
     }
 }
