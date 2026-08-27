@@ -1,5 +1,7 @@
 #include <vector>
 
+// Kadanes algorithm
+
 int maximumSubarray(std::vector<int> &A)
 {
     int currentSum = 0;
