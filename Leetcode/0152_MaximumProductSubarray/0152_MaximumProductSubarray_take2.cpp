@@ -1,6 +1,8 @@
 #include <vector>
 #include <algorithm>
 
+// 27/08/2026
+
 int maxProdSub(const std::vector<int> &nums)
 {
     int currMax = nums[0], currMin = nums[0], result = nums[0];
