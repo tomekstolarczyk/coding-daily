@@ -1,9 +1,9 @@
-using namespace std;
 #include <string>
 #include <array>
 #include <iostream>
 #include <cassert>
 #include <vector>
+using namespace std;
 
 class Solution
 {
